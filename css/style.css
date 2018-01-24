@@ -706,13 +706,13 @@ textarea {
 	.filter{
 		width:70px;
 		font-size:16px;
-		margin: 0 10px;
+		margin: 0px 10px;
 	}
 	form{
 		margin: 50px 20px;
 	}
 	.pop-up__window{
-  height: 100vh;
+      height: 100vh;
 	}
 	.slide{
 		height:250px;
