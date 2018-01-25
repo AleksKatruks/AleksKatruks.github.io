@@ -10,7 +10,8 @@ $(function(){
      if (isMobile) {
        $('nav').addClass('fixed');
 	   $('.section-block').children().removeClass('animatable');
-	   $('.about__block').removeClass('animatable');
+	   $('.about__block').removeClass('animatable').removeClass('bars-wrap');
+	
   } else {
     $('nav').addClass('full');
   }
@@ -23,6 +24,7 @@ $(function(){
 		
 	var site = $('.site-main').offset().top,
 	    current_pos = $(this).scrollTop() + 50;
+		if(isMobile) current_pos = $(this).scrollTop()+150;
 	var win = $(window).height();
 	if($(this).scrollTop() > site + win){
 		nav.addClass('active-scroll');	
@@ -56,7 +58,7 @@ $(function(){
 		
 	
 		if($animatable.offset().top + $animatable.height() + 200 < current_pos + win){
-			$animatable.removeClass('animateon').addClass('animateon');
+			$animatable.addClass('animateon');
 			
 		};
 
