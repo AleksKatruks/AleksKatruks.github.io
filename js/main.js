@@ -8,7 +8,7 @@ $(function(){
   }
    // Sticky Nav on Mobile
      if (isMobile) {
-       $('nav').addClass('fixed');
+    
 	   $('.section-block').children().removeClass('animatable');
 	   $('.about__block').removeClass('animatable').removeClass('bars-wrap');
 	
@@ -27,9 +27,9 @@ $(function(){
 		if(isMobile) current_pos = $(this).scrollTop()+150;
 	var win = $(window).height();
 	if($(this).scrollTop() > site + win){
-		nav.addClass('active-scroll');	
+		nav.addClass('fixed');	
 	} else {
-		nav.removeClass('active-scroll');	
+		nav.removeClass('fixed');	
 	}
 	sections.each(function(){
 	
