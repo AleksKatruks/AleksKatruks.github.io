@@ -10,6 +10,7 @@ $(function(){
      if (isMobile) {
        $('nav').addClass('fixed');
 	   $('.section-block').children().removeClass('animatable');
+	   $('.about__block').removeClass('animatable');
   } else {
     $('nav').addClass('full');
   }
