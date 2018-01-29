@@ -1,7 +1,14 @@
+@font-face{	
+	font-family: 'proximanova-regular';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}	
 body,html {
     margin: 0;
-    font-family: calibri;
-	width:100%;
+   	width:100%;
+	font-family:'proximanova-regular';
 	
 }
 section {
@@ -58,7 +65,7 @@ flex-wrap: wrap;
 	transition: .3s;
 	color:#fff;
 	background: #203339;
-	z-index: 0;
+	z-index: 1000;
 }
 #site-main__block:after{
 	position:absolute;
@@ -548,7 +555,7 @@ form{
 
 .feedback-input {
   color:#fff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'proximanova-regular', sans-serif;
   font-weight:500;
   font-size: 18px;
   line-height: 22px;
@@ -566,7 +573,7 @@ textarea {
   resize:vertical;
 }
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'proximanova-regular', sans-serif;
   width: 30%;
   background:#ff465b;
   border:0;
@@ -694,6 +701,9 @@ textarea {
 	}
 	.site-main__menu{
 		width:100%;
+	}
+	.info-box{
+		padding: 35px 20px 60px 20px;
 	}
 	.menu-link{		
 		font-size:12px;
