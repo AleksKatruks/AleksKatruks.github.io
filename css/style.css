@@ -266,8 +266,7 @@ section:nth-child(4){
 	cursor:pointer;
 	font-size:20px;
 	margin: 0 20px;
-	padding: 4px 6px; 
-	width:80px;
+	padding: 4px 16px; 
 	text-align:center;
 	font-weight:bold;
 	text-transform:uppercase;
@@ -338,6 +337,9 @@ section:nth-child(4){
 	text-align:center;
 	text-transform:uppercase;
 }
+.mix:hover{
+	cursor:pointer;
+}
 .mix .item__button:hover{
 	color:#000;
 	background-color: #fff;
@@ -387,6 +389,7 @@ section:nth-child(4){
 	width: 300px;
 	height:300px;
 	position:relative;
+	cursor:pointer;
 }
 
 .pop-up{
@@ -552,6 +555,10 @@ form{
 	background-color:#1a1d25;
 	position:relative;
 	width:100%;
+	text-align:center;
+}
+#home{
+	display:block;
 }
 .button{
 	display:block;
