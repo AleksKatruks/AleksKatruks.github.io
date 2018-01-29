@@ -409,6 +409,7 @@ section:nth-child(4){
 	max-width:700px;
 	transform: scale(0.5);
 	opacity:0;
+	position:relative;
 	transition:all .4s;
 	color:#000;
 	margin: 0 auto;
@@ -708,6 +709,7 @@ textarea {
 	}
 	.pop-up__window{
       height: 100vh;
+	  top:0;
 	}
 	.slide{
 		height:250px;
