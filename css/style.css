@@ -148,7 +148,9 @@ nav{
 }
 
 .menu-link{
-	display:inline;
+	display:block;
+	width:100%;
+	height:100%;
 	padding: 0 20px;
 	cursor:pointer;
 	line-height:50px;
