@@ -119,6 +119,7 @@ flex-wrap: wrap;
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;		
+  display:block;
 }
 
 @keyframes scroll-up {
@@ -148,9 +149,8 @@ nav{
 }
 
 .menu-link{
-	display:block;
-	width:100%;
-	height:100%;
+	display:inline;
+
 	padding: 0 20px;
 	cursor:pointer;
 	line-height:50px;
@@ -552,9 +552,11 @@ form{
 	height:100px;
 	background-color:#1a1d25;
 	position:relative;
-	
+	width:100%;
 }
-
+.button{
+	display:block;
+}
 .feedback-input {
   color:#fff;
   font-family: 'proximanova-regular', sans-serif;
