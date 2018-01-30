@@ -1,14 +1,8 @@
-@font-face{	
-	font-family: 'proximanova-regular';
-	src: url('../fonts/ProximaNova-Regular.eot');
-	src: url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}	
+	
 body,html {
-    margin: 0;
+	margin: 0;
    	width:100%;
-	font-family:'proximanova-regular';
+	font-family:'ABeeZee', sans-serif;
 	
 }
 section {
@@ -41,7 +35,7 @@ flex-wrap: wrap;
 }
 .site-main__initial{
 	text-transform:uppercase;
-	letter-spacing:8px;
+	letter-spacing:6px;
 	color: #a62a2a;
 	padding-left:15px;
 }
@@ -573,7 +567,7 @@ form{
 }
 .feedback-input {
   color:#fff;
-  font-family: 'proximanova-regular', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   font-weight:500;
   font-size: 18px;
   line-height: 22px;
@@ -591,7 +585,7 @@ textarea {
   resize:vertical;
 }
 [type="submit"] {
-  font-family: 'proximanova-regular', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   width: 30%;
   background:#ff465b;
   border:0;

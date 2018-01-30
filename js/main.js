@@ -33,7 +33,7 @@ $( document ).ready(function(){
 	$(window).on('scroll', function (){
 		
 	var site = $('.site-main').offset().top,
-	    current_pos = $(this).scrollTop() + 50;
+	    current_pos = $(this).scrollTop() + 90;
 		
     if(isMobile) current_pos = $(this).scrollTop()+150;
 	var win = $(window).height();
@@ -54,7 +54,7 @@ $( document ).ready(function(){
 		
 	  if (current_pos >= top_section && current_pos < bottom){
 	    $('.menu-link').removeClass('active-link');		
-		nav.find('.menu-link[dest="#'+$(this).attr('id') + '"]').addClass('active-link');
+		nav.find('.menu-link[dest="'+$(this).attr('id') + '"]').addClass('active-link');
 		  
 	  }
 	 
