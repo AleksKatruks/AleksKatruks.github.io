@@ -15,10 +15,10 @@ $(function(){
 	   $('.section-block').children().removeClass('animatable');
 	   $('.about__block').removeClass('animatable').removeClass('bars-wrap');
 	
-  } else {
-    $('nav').addClass('full');
   };
-  
+   if (isMobile) {
+    $('nav').addClass('fixed');
+  }
   //hover for IOS
   
    	 if(isIOS){
@@ -27,20 +27,26 @@ $(function(){
 	  
 	  
     // Scroll function  menu jump
- var sections = $('section'),
+    var sections = $('section'),
      nav = $('nav');
 
 	$(window).on('scroll', function (){
 		
 	var site = $('.site-main').offset().top,
 	    current_pos = $(this).scrollTop() + 50;
-		if(isMobile) current_pos = $(this).scrollTop()+150;
+		
+    if(isMobile) current_pos = $(this).scrollTop()+150;
 	var win = $(window).height();
-	if($(this).scrollTop() > site + win){
+	
+	
+	if(!isMobile){
+	  if($(this).scrollTop() > site + win){
 		nav.addClass('fixed');	
 	} else {
 		nav.removeClass('fixed');	
 	}
+	}
+	
 	sections.each(function(){
 	
 	 var top_section = $(this).offset().top,
