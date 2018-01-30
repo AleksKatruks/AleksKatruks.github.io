@@ -27,7 +27,7 @@ $(function(){
 	  
 	  
     // Scroll function  menu jump
-    var sections = $('section'),
+     var sections = $('section'),
      nav = $('nav');
 
 	$(window).on('scroll', function (){
@@ -142,7 +142,9 @@ $(function(){
     
     var dest = $(this).attr('dest');
     if(isIOS){
-		alert('I see IOS');
+		$('html').scrollTop($(dest).offset().top);
+		
+		
 	}
     $('html').animate({
     scrollTop: $(dest).offset().top}, 500);
