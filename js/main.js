@@ -15,6 +15,12 @@ $(function(){
   } else {
     $('nav').addClass('full');
   }
+  if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i)){
+	  $('.gallery__item').click(function(){	 
+	  });
+  }
+  
+  
   
     // Scroll function  menu jump
  var sections = $('section'),

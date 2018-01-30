@@ -14,9 +14,7 @@ body,html {
 section {
 	color: #616161;
 }
-.wrap{
-	width: 100vw;
-}
+
 .site-main{
   height: calc(100vh + 54px);
   position:relative;
@@ -65,7 +63,7 @@ flex-wrap: wrap;
 	transition: .3s;
 	color:#fff;
 	background: #203339;
-	z-index: 1000;
+	z-index: 100;
 }
 #site-main__block:after{
 	position:absolute;
@@ -436,7 +434,7 @@ section:nth-child(4){
 .pop-up__close{
 	font-weight:800 !important;
 	position:absolute;
-	bottom: 25px;
+	bottom: 55px;
 	font-size:20pt !important;
 	right:25px;
 	cursor:pointer;
@@ -491,7 +489,7 @@ section:nth-child(4){
 }
 .info-box{
 	box-sizing:border-box;
-	padding:35px 20px 90px 20px;
+	padding:35px 20px 40px 20px;
 	position:relative;
 }
 .info-box__title{
@@ -562,6 +560,12 @@ form{
 }
 .button{
 	display:block;
+	width:30%;
+	background: #ff465b;
+	color: #fff;
+	font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .feedback-input {
   color:#fff;
@@ -624,7 +628,10 @@ textarea {
 	font-size:15px;
 	color:#414758;
 	text-align:center;
-	
+	padding:30px;
+}
+.footer__created p{
+
 }
 @keyframes fadeInUp {
 	0% {
@@ -696,6 +703,11 @@ textarea {
 		transform: translateX(0);
 	}
 }
+@media screen and (max-width: 1280px){
+	.pop-up__window{
+		top:0;
+	}
+}
 
 @media screen and (max-width: 600px){
 	.site-main__portrait img{
@@ -713,7 +725,7 @@ textarea {
 		width:100%;
 	}
 	.info-box{
-		padding: 35px 20px 60px 20px;
+		padding: 35px 20px 40px 20px;
 	}
 	.menu-link{		
 		font-size:12px;
