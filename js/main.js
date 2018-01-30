@@ -141,13 +141,13 @@ $(function(){
 	$('.menu-link').on('click', function () {
     
     var dest = $(this).attr('dest');
-    if(isIOS){
-		$('html').scrollTop($(dest).offset().top);
+   // if(isIOS){
+	//	$('html').scrollTop($(dest).offset().top);
 		
 		
-	}
-    $('html').animate({
-    scrollTop: $(dest).offset().top}, 500);
+	//}
+    $('html, body').animate({
+    scrollTop: $('#' + dest).offset().top}, 500);
 	});
 	
 /*$("#form").submit(function(){
