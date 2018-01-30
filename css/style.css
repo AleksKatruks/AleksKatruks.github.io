@@ -718,6 +718,9 @@ textarea {
 }
 
 @media screen and (max-width: 600px){
+	.site-main{
+		padding-top:50px;
+	}
 	.site-main__portrait img{
 		width:100%;
 	}
