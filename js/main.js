@@ -1,10 +1,13 @@
 $(function(){
 	
 	
-  var isMobile;
+  var isMobile, isIOS;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	  console.log(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
    isMobile = true;
+  }
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+	  isIOS = true;
   }
    // Sticky Nav on Mobile
      if (isMobile) {
@@ -15,9 +18,14 @@ $(function(){
   } else {
     $('nav').addClass('full');
   };
-   	 if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+  
+  //hover for IOS
+  
+   	 if(isIOS){
 	  $('.gallery__item').click(function(){});
       };
+	  
+	  
     // Scroll function  menu jump
  var sections = $('section'),
      nav = $('nav');
@@ -46,9 +54,9 @@ $(function(){
 	 
 	
 	});
-	  $(window).resize(function(){
-       posFilterBar($('.filter').first());
-     });
+	//  $(window).resize(function(){
+    //   posFilterBar($('.filter').first());
+    // });
 
  
 	
@@ -127,7 +135,9 @@ $(function(){
 	$('.menu-link').on('click', function () {
     
     var dest = $(this).attr('dest');
-  
+    if(isIOS){
+		alert('I see IOS');
+	}
     $('html').animate({
     scrollTop: $(dest).offset().top}, 500);
 	});

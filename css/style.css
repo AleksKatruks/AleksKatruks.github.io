@@ -104,6 +104,11 @@ flex-wrap: wrap;
 	position:absolute;
 	bottom: 10%;
 	color:#616161;
+	margin: 0 auto;
+    display: block;
+	text-align:center;
+	left:0;
+	right:0;
 }
 .scroller {
   font-size:30px !important;
@@ -735,9 +740,8 @@ textarea {
 		padding:0 10px;
 	}
 	.filter{
-		width:70px;
-		font-size:16px;
-		margin: 0px 10px;
+		font-size:14px;
+		margin: 0px 8px;
 	}
 	form{
 		margin: 50px 20px;
