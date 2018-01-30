@@ -25,12 +25,6 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-.fixed{
-	position:fixed;
-	top:0;
-    left:0;	
-	z-index:500;
-}
 .visibility{
 	visibility:visible !important;	
 }
@@ -136,7 +130,13 @@ flex-wrap: wrap;
   100% { transform: translateY(15px); opacity: 0;}
 }
 
-
+nav.fixed{
+	position:fixed;
+	top:0px;
+    left:0;	
+	z-index:500;
+	bottom:inherit;
+}
 nav{
 	height:50px;
 	background: #203339;
