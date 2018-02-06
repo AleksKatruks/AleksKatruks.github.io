@@ -440,8 +440,6 @@ section:nth-child(4){
 	color:#bbb;
 }
 .carousel-wrap{
-
-	height:500px;
 	overflow: hidden;
 	position:relative;
 }
@@ -705,9 +703,13 @@ textarea {
 		transform: translateX(0);
 	}
 }
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1388px){
 	.pop-up__window{
 		top:0;
+		
+	}
+	.slide{
+		height:400px;
 	}
 }
 
