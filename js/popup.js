@@ -62,6 +62,7 @@ $(function(){
 	function setDimensions() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      slideWidth = $(window).innerWidth();
+	 console.log(slideWidth);
     }
     $('.carousel-wrap, .slide').css('width', slideWidth);
     $('.modal').css('max-width', slideWidth);

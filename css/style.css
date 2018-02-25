@@ -715,12 +715,19 @@ textarea {
 		top:0;
 		
 	}
-	.slide{
-		height:400px;
-	}
+
 	.info-box{
 		padding: 35px 20px 50px 20px;
 	}
+	.about__block{
+		width:70%;
+	}
+}
+@media screen and (max-width: 768px){
+	.pop-up__window{
+		max-width:100%;
+	}
+	
 }
 
 @media screen and (max-width: 600px){
