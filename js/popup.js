@@ -65,7 +65,7 @@ $(function(){
 	 console.log(slideWidth);
     }
     $('.carousel-wrap, .slide').css('width', slideWidth);
-    $('.modal').css('max-width', slideWidth);
+    $('.pop-up__window').css('max-width', slideWidth);
     $('.carousel').css('left', slideWidth * -1)
   }
 	setDimensions();
