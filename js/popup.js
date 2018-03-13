@@ -19,7 +19,7 @@ $(function(){
 		  title:  'Email markup',
           detail: '"E-mail Dispatch" - Email marketing campaigns. In the framework of the project I was coordinating different teams. We had to design templates( HTML table markup), that further were sent to doctors. I used Photoshop and Illustrator while creating a design.' +
                   'I have launched more than 8 designes. According to company policies I cant share template with text and img',
-		  linkto: 'https://github.com/AleksKatruk/Email/blob/master/Sprint%20Webinar%20May%2010th%20%26%20June%2024th%20Invitation.html'			
+		  linkto: 'www.github.com/AleksKatruk/Email'			
 		},
 		videoplugin: {
 		  title:  'Pfizers videopage',
