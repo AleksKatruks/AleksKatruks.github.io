@@ -395,6 +395,15 @@ section:nth-child(4){
 	position:relative;
 	cursor:pointer;
 }
+.menu-select__item a{
+	text-decoration:none;
+	color:#ff465b;
+	font-weight: 600;
+}
+.menu-select__item a:hover{
+	color:#CA394D;
+}
+
 
 .pop-up{
 	display: flex;
