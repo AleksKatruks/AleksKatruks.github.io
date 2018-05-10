@@ -26,7 +26,7 @@ $(function(){
           detail: 'Video page - a task was to create a page, where all videos of each product were gathered together in groups. But since the website was hosted on Drupal CMS,' +
                   'I had limited possibilities in creating and development. So, I used only pure JS.'+
 				  'I created a simple UI with a function of video grouping/filter by the name of a particular product.',
-           linkto: 'www.pfizermed.com.ua/uk-UA/node/1246?destination=uk-UA/node/1246'				  
+           linkto: 'https://katruks.github.io/'				  
 		},
 		a2o: {
 		  title:  'A20 - furniture brand',
